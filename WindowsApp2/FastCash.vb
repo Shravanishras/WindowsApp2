@@ -13,7 +13,7 @@ Public Class FastCash
             Try
                 Dim Bal = 0
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into TrsnTable Values('" & MyAcc & "','" & TrType & "','" & Amount & "','" & System.DateTime.Today.Date & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_2 Values('" & MyAcc & "','" & TrType & "','" & Amount & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()
@@ -55,7 +55,7 @@ Public Class FastCash
         Dim NewBal = OldBalance - Amt
         Try
             con.Open()
-            Dim cmd As SqlCommand = New SqlCommand("Update AccTable set Balance=" & NewBal & "where AccountNo" & Acc & "", con)
+            Dim cmd As SqlCommand = New SqlCommand("Update AccTable set Balance=" & NewBal & "where AccountNo=" & Acc & "", con)
             cmd.ExecuteNonQuery()
             MsgBox("Balance Updated")
             con.Close()
@@ -73,7 +73,7 @@ Public Class FastCash
             Try
                 Dim Bal = 0
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into TrsnTable Values('" & MyAcc & "','" & Account & "','" & TrType & "','" & Amount & "','" & System.DateTime.Today.Date & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_2 Values('" & MyAcc & "','" & Account & "','" & TrType & "','" & Amount & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()
@@ -97,7 +97,7 @@ Public Class FastCash
             Try
                 Dim Bal = 0
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into TrsnTable Values('" & MyAcc & "','" & Account & "','" & TrType & "','" & Amount & "','" & System.DateTime.Today.Date & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_2 Values('" & MyAcc & "','" & Account & "','" & TrType & "','" & Amount & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()
@@ -122,7 +122,7 @@ Public Class FastCash
             Try
                 Dim Bal = 0
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into TrsnTable Values('" & MyAcc & "','" & Account & "','" & TrType & "','" & Amount & "','" & System.DateTime.Today.Date & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_2 Values('" & MyAcc & "','" & Account & "','" & TrType & "','" & Amount & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()
@@ -146,7 +146,7 @@ Public Class FastCash
             Try
                 Dim Bal = 0
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into TrsnTable Values('" & MyAcc & "','" & Account & "','" & TrType & "','" & Amount & "','" & System.DateTime.Today.Date & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_2 Values('" & MyAcc & "','" & Account & "','" & TrType & "','" & Amount & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()
@@ -171,7 +171,7 @@ Public Class FastCash
             Try
                 Dim Bal = 0
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into TrsnTable Values('" & MyAcc & "','" & Account & "','" & TrType & "','" & Amount & "','" & System.DateTime.Today.Date & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_2 Values('" & MyAcc & "','" & Account & "','" & TrType & "','" & Amount & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()

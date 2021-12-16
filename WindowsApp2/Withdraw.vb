@@ -13,7 +13,6 @@ Public Class Withdraw
     Private Sub Withdraw_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         MyAcc = Convert.ToInt32(Acc)
         GetBalance()
-
     End Sub
     Dim OldBalance = 0
     Dim con As SqlConnection = New SqlConnection("Data Source=LAPTOP-R22F8PKB\DATACAMP_SQL;Initial Catalog=ATMManagementDB;Integrated Security=True")
@@ -39,7 +38,7 @@ Public Class Withdraw
             Try
                 Dim Bal = 0
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into TrsnTable Values('" & MyAcc & "','" & TrType & "','" & AmountW.Text & "','" & System.DateTime.Today.Date & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_2 Values('" & MyAcc & "','" & TrType & "','" & AmountW.Text & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()
@@ -54,7 +53,7 @@ Public Class Withdraw
         Dim NewBal = OldBalance - Convert.ToInt32(AmountW.Text)
         Try
             con.Open()
-            Dim cmd As SqlCommand = New SqlCommand("Update AccTable set Balance=" & NewBal & "where AccountNo" & Acc & "", con)
+            Dim cmd As SqlCommand = New SqlCommand("Update AccTable set Balance=" & NewBal & "where AccountNo=" & Acc & "", con)
             cmd.ExecuteNonQuery()
             MsgBox("Balance Updated")
             con.Close()

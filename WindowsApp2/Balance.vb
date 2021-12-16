@@ -4,8 +4,9 @@ Public Class Balance
     Public Property Acc As Integer
     Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
         Dim Obj As New Menuform
-        Me.Hide()
+        Obj.Acc = Acc
         Obj.Show()
+        Me.Hide()
     End Sub
     Dim con = New SqlConnection("Data Source=LAPTOP-R22F8PKB\DATACAMP_SQL;Initial Catalog=ATMManagementDB;Integrated Security=True")
 

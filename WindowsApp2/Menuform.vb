@@ -2,6 +2,7 @@
     Public Property Acc As String
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles ChangePIN.Click
         Dim Obj = New ChangePIN()
+        Obj.Acc = AccountNo.Text
         Me.Hide()
         Obj.Show()
     End Sub

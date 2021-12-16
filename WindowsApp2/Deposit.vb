@@ -4,8 +4,8 @@ Imports System.Data.SqlClient.SqlException
 Public Class Deposit
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
         Dim Obj = New Menuform()
-        Obj.Show()
         Obj.Acc = Acc
+        Obj.Show()
         Me.Hide()
     End Sub
     Dim cmd As New SqlCommand
