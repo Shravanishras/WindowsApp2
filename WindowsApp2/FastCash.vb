@@ -73,7 +73,7 @@ Public Class FastCash
             Try
                 Dim Bal = 0
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_2 Values('" & MyAcc & "','" & Account & "','" & TrType & "','" & Amount & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_2 Values('" & MyAcc & "','" & TrType & "','" & Amount & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()
@@ -97,7 +97,7 @@ Public Class FastCash
             Try
                 Dim Bal = 0
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_2 Values('" & MyAcc & "','" & Account & "','" & TrType & "','" & Amount & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_2 Values('" & MyAcc & "','" & TrType & "','" & Amount & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()
@@ -122,7 +122,7 @@ Public Class FastCash
             Try
                 Dim Bal = 0
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_2 Values('" & MyAcc & "','" & Account & "','" & TrType & "','" & Amount & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_2 Values('" & MyAcc & "','" & TrType & "','" & Amount & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()
@@ -146,7 +146,7 @@ Public Class FastCash
             Try
                 Dim Bal = 0
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_2 Values('" & MyAcc & "','" & Account & "','" & TrType & "','" & Amount & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_2 Values('" & MyAcc & "','" & TrType & "','" & Amount & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()
@@ -171,7 +171,7 @@ Public Class FastCash
             Try
                 Dim Bal = 0
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_2 Values('" & MyAcc & "','" & Account & "','" & TrType & "','" & Amount & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_2 Values('" & MyAcc & "','" & TrType & "','" & Amount & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()

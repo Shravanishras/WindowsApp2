@@ -1,6 +1,7 @@
 ﻿Imports System.Data
 Imports System.Data.SqlClient
 Imports System.Data.SqlClient.SqlException
+Imports System.Data.DataSetDateTime
 Public Class Withdraw
     Public Property Acc As String
     Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
@@ -37,8 +38,10 @@ Public Class Withdraw
             Dim TrType = "Withdraw"
             Try
                 Dim Bal = 0
+                Dim todaydt As DateTime = System.DateTime.Today.Date
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_2 Values('" & MyAcc & "','" & TrType & "','" & AmountW.Text & "')", con)
+
+                Dim cmd As SqlCommand = New SqlCommand("Insert into TrsnTable Values('" & MyAcc & "','" & TrType & "','" & AmountW.Text & "','" & todaydt & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()
