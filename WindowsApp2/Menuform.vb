@@ -13,9 +13,9 @@
         Me.Hide()
     End Sub
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Logout.Click
-        Dim Obj = New Login()
+        Dim Obj = New Thankyou()
         Obj.Show()
-        Acc = AccountNo.Text
+        'Acc = AccountNo.Text'
         Me.Hide()
     End Sub
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Withdraw.Click

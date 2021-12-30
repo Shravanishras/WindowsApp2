@@ -24,5 +24,6 @@ Public Class Login
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim Obj = New Signupform
         Obj.Show()
+        Me.Hide()
     End Sub
 End Class

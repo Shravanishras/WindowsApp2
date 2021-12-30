@@ -89,5 +89,25 @@ Namespace My.Resources
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property green_sand_paper_53876_86281() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("green-sand-paper_53876-86281", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Thank_You_Visit_Again_Images_HD_2048x2048() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Thank-You-Visit-Again-Images-HD-2048x2048", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
     End Module
 End Namespace

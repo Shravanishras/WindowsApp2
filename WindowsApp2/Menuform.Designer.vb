@@ -37,8 +37,9 @@ Partial Class Menuform
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Palatino Linotype", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(269, 23)
+        Me.Label1.Location = New System.Drawing.Point(245, 23)
         Me.Label1.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(733, 50)
@@ -48,6 +49,7 @@ Partial Class Menuform
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(367, 101)
         Me.Label2.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
@@ -58,7 +60,7 @@ Partial Class Menuform
         '
         'Deposit
         '
-        Me.Deposit.BackColor = System.Drawing.Color.Gainsboro
+        Me.Deposit.BackColor = System.Drawing.Color.Transparent
         Me.Deposit.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Deposit.Location = New System.Drawing.Point(267, 189)
         Me.Deposit.Name = "Deposit"
@@ -69,7 +71,7 @@ Partial Class Menuform
         '
         'FastCash
         '
-        Me.FastCash.BackColor = System.Drawing.Color.Gainsboro
+        Me.FastCash.BackColor = System.Drawing.Color.Transparent
         Me.FastCash.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FastCash.Location = New System.Drawing.Point(267, 286)
         Me.FastCash.Name = "FastCash"
@@ -80,7 +82,7 @@ Partial Class Menuform
         '
         'ChangePIN
         '
-        Me.ChangePIN.BackColor = System.Drawing.Color.Gainsboro
+        Me.ChangePIN.BackColor = System.Drawing.Color.Transparent
         Me.ChangePIN.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ChangePIN.Location = New System.Drawing.Point(267, 379)
         Me.ChangePIN.Name = "ChangePIN"
@@ -91,7 +93,7 @@ Partial Class Menuform
         '
         'Withdraw
         '
-        Me.Withdraw.BackColor = System.Drawing.Color.Gainsboro
+        Me.Withdraw.BackColor = System.Drawing.Color.Transparent
         Me.Withdraw.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Withdraw.Location = New System.Drawing.Point(673, 189)
         Me.Withdraw.Name = "Withdraw"
@@ -102,7 +104,7 @@ Partial Class Menuform
         '
         'MiniStmt
         '
-        Me.MiniStmt.BackColor = System.Drawing.Color.Gainsboro
+        Me.MiniStmt.BackColor = System.Drawing.Color.Transparent
         Me.MiniStmt.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MiniStmt.Location = New System.Drawing.Point(673, 286)
         Me.MiniStmt.Name = "MiniStmt"
@@ -113,7 +115,7 @@ Partial Class Menuform
         '
         'Balance
         '
-        Me.Balance.BackColor = System.Drawing.Color.Gainsboro
+        Me.Balance.BackColor = System.Drawing.Color.Transparent
         Me.Balance.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Balance.Location = New System.Drawing.Point(673, 379)
         Me.Balance.Name = "Balance"
@@ -124,7 +126,7 @@ Partial Class Menuform
         '
         'Logout
         '
-        Me.Logout.BackColor = System.Drawing.Color.Gainsboro
+        Me.Logout.BackColor = System.Drawing.Color.Transparent
         Me.Logout.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Logout.Location = New System.Drawing.Point(500, 502)
         Me.Logout.Name = "Logout"
@@ -136,6 +138,7 @@ Partial Class Menuform
         'AccountNo
         '
         Me.AccountNo.AutoSize = True
+        Me.AccountNo.BackColor = System.Drawing.Color.Transparent
         Me.AccountNo.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AccountNo.Location = New System.Drawing.Point(724, 101)
         Me.AccountNo.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
@@ -149,6 +152,8 @@ Partial Class Menuform
         Me.AutoScaleDimensions = New System.Drawing.SizeF(15.0!, 31.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
+        Me.BackgroundImage = Global.WindowsApp2.My.Resources.Resources.green_sand_paper_53876_86281
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1194, 614)
         Me.Controls.Add(Me.AccountNo)
         Me.Controls.Add(Me.Logout)

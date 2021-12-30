@@ -43,6 +43,7 @@ Partial Class Signupform
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Palatino Linotype", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(323, 22)
         Me.Label1.Name = "Label1"
@@ -53,6 +54,7 @@ Partial Class Signupform
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(494, 84)
         Me.Label2.Name = "Label2"
@@ -63,8 +65,9 @@ Partial Class Signupform
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(86, 164)
+        Me.Label3.Location = New System.Drawing.Point(97, 174)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(196, 31)
         Me.Label3.TabIndex = 2
@@ -73,8 +76,9 @@ Partial Class Signupform
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(86, 230)
+        Me.Label4.Location = New System.Drawing.Point(97, 247)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(78, 31)
         Me.Label4.TabIndex = 3
@@ -83,8 +87,9 @@ Partial Class Signupform
         'Label6
         '
         Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(86, 290)
+        Me.Label6.Location = New System.Drawing.Point(97, 334)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(101, 31)
         Me.Label6.TabIndex = 5
@@ -93,8 +98,9 @@ Partial Class Signupform
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(636, 165)
+        Me.Label7.Location = New System.Drawing.Point(647, 182)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(56, 31)
         Me.Label7.TabIndex = 6
@@ -103,8 +109,9 @@ Partial Class Signupform
         'Label10
         '
         Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(636, 230)
+        Me.Label10.Location = New System.Drawing.Point(647, 242)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(176, 31)
         Me.Label10.TabIndex = 9
@@ -113,8 +120,9 @@ Partial Class Signupform
         'Label11
         '
         Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
         Me.Label11.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(636, 299)
+        Me.Label11.Location = New System.Drawing.Point(647, 314)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(67, 31)
         Me.Label11.TabIndex = 10
@@ -122,40 +130,45 @@ Partial Class Signupform
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.Color.Transparent
         Me.Button1.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(485, 466)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(207, 41)
+        Me.Button1.Size = New System.Drawing.Size(207, 47)
         Me.Button1.TabIndex = 11
         Me.Button1.Text = "SUBMIT"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
         '
+        Me.Button2.BackColor = System.Drawing.Color.Transparent
         Me.Button2.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(485, 537)
+        Me.Button2.Location = New System.Drawing.Point(485, 539)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(207, 41)
+        Me.Button2.Size = New System.Drawing.Size(207, 47)
         Me.Button2.TabIndex = 12
         Me.Button2.Text = "LOGOUT"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'TextBox1
         '
+        Me.TextBox1.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(334, 174)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(218, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(218, 39)
         Me.TextBox1.TabIndex = 13
         '
         'TextBox2
         '
+        Me.TextBox2.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(334, 239)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(218, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(218, 39)
         Me.TextBox2.TabIndex = 15
         '
         'TextBox3
         '
+        Me.TextBox3.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox3.Location = New System.Drawing.Point(334, 299)
         Me.TextBox3.Multiline = True
         Me.TextBox3.Name = "TextBox3"
@@ -164,29 +177,38 @@ Partial Class Signupform
         '
         'TextBox4
         '
+        Me.TextBox4.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox4.Location = New System.Drawing.Point(859, 174)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(218, 22)
+        Me.TextBox4.Size = New System.Drawing.Size(228, 39)
         Me.TextBox4.TabIndex = 17
         '
         'TextBox5
         '
+        Me.TextBox5.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox5.Location = New System.Drawing.Point(859, 239)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(218, 22)
+        Me.TextBox5.Size = New System.Drawing.Size(228, 39)
         Me.TextBox5.TabIndex = 18
         '
         'DateTimePicker1
         '
+        Me.DateTimePicker1.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker1.Location = New System.Drawing.Point(859, 308)
+        Me.DateTimePicker1.MaxDate = New Date(2003, 12, 31, 0, 0, 0, 0)
+        Me.DateTimePicker1.MinDate = New Date(1920, 1, 1, 0, 0, 0, 0)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(218, 22)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(228, 39)
         Me.DateTimePicker1.TabIndex = 19
+        Me.DateTimePicker1.Value = New Date(2003, 12, 31, 0, 0, 0, 0)
         '
         'Signupform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
+        Me.BackgroundImage = Global.WindowsApp2.My.Resources.Resources.green_sand_paper_53876_86281
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1194, 614)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.TextBox5)

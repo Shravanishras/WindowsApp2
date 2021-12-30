@@ -7,13 +7,15 @@ Public Class FastCash
         If OldBalance < 10000 Then
             MsgBox("Not Enough Balance")
         Else
+            Dim TrDate As DateTime = DateTime.Now
+            Dim strDate As String = TrDate.ToString("yyyy-MM-dd HH:mm:ss")
             Dim Account = Convert.ToInt32(Acc)
             Dim TrType = "Withdraw"
             Amount = 10000
             Try
                 Dim Bal = 0
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_2 Values('" & MyAcc & "','" & TrType & "','" & Amount & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_3 Values('" & MyAcc & "','" & TrType & "','" & Amount & "','" & strDate & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()
@@ -67,13 +69,15 @@ Public Class FastCash
         If OldBalance < 100 Then
             MsgBox("Not Enough Balance")
         Else
+            Dim TrDate As DateTime = DateTime.Now
+            Dim strDate As String = TrDate.ToString("yyyy-MM-dd HH:mm:ss")
             Dim Account = Convert.ToInt32(Acc)
             Dim TrType = "Withdraw"
             Amount = 100
             Try
                 Dim Bal = 0
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_2 Values('" & MyAcc & "','" & TrType & "','" & Amount & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_3 Values('" & MyAcc & "','" & TrType & "','" & Amount & "','" & strDate & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()
@@ -91,13 +95,15 @@ Public Class FastCash
         If OldBalance < 500 Then
             MsgBox("Not Enough Balance")
         Else
+            Dim TrDate As DateTime = DateTime.Now
+            Dim strDate As String = TrDate.ToString("yyyy-MM-dd HH:mm:ss")
             Dim Account = Convert.ToInt32(Acc)
             Dim TrType = "Withdraw"
             Amount = 500
             Try
                 Dim Bal = 0
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_2 Values('" & MyAcc & "','" & TrType & "','" & Amount & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_3 Values('" & MyAcc & "','" & TrType & "','" & Amount & "','" & strDate & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()
@@ -116,13 +122,15 @@ Public Class FastCash
         If OldBalance < 1000 Then
             MsgBox("Not Enough Balance")
         Else
+            Dim TrDate As DateTime = DateTime.Now
+            Dim strDate As String = TrDate.ToString("yyyy-MM-dd HH:mm:ss")
             Dim Account = Convert.ToInt32(Acc)
             Dim TrType = "Withdraw"
             Amount = 1000
             Try
                 Dim Bal = 0
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_2 Values('" & MyAcc & "','" & TrType & "','" & Amount & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_3 Values('" & MyAcc & "','" & TrType & "','" & Amount & "','" & strDate & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()
@@ -140,13 +148,15 @@ Public Class FastCash
         If OldBalance < 2000 Then
             MsgBox("Not Enough Balance")
         Else
+            Dim TrDate As DateTime = DateTime.Now
+            Dim strDate As String = TrDate.ToString("yyyy-MM-dd HH:mm:ss")
             Dim Account = Convert.ToInt32(Acc)
             Dim TrType = "Withdraw"
             Amount = 2000
             Try
                 Dim Bal = 0
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_2 Values('" & MyAcc & "','" & TrType & "','" & Amount & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_3 Values('" & MyAcc & "','" & TrType & "','" & Amount & "','" & strDate & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()
@@ -165,13 +175,15 @@ Public Class FastCash
         If OldBalance < 5000 Then
             MsgBox("Not Enough Balance")
         Else
+            Dim TrDate As DateTime = DateTime.Now
+            Dim strDate As String = TrDate.ToString("yyyy-MM-dd HH:mm:ss")
             Dim Account = Convert.ToInt32(Acc)
             Dim TrType = "Withdraw"
             Amount = 5000
             Try
                 Dim Bal = 0
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_2 Values('" & MyAcc & "','" & TrType & "','" & Amount & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_3 Values('" & MyAcc & "','" & TrType & "','" & Amount & "','" & strDate & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()

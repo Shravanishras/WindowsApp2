@@ -38,14 +38,19 @@ Public Class Withdraw
             Dim TrType = "Withdraw"
             Try
                 Dim Bal = 0
-                Dim todaydt As DateTime = System.DateTime.Today.Date
+                Dim TrDate As DateTime = DateTime.Now
+                Dim strDate As String = TrDate.ToString("yyyy-MM-dd HH:mm:ss")
                 con.Open()
 
-                Dim cmd As SqlCommand = New SqlCommand("Insert into TrsnTable Values('" & MyAcc & "','" & TrType & "','" & AmountW.Text & "','" & todaydt & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_3 Values('" & MyAcc & "','" & TrType & "','" & AmountW.Text & "','" & strDate & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()
                 UpdateBal()
+                Dim Obj = New Menuform()
+                Obj.Acc = Acc
+                Obj.Show()
+                Me.Hide()
             Catch ex As Exception
                 MsgBox(ex.Message)
             End Try

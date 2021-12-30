@@ -10,7 +10,7 @@ Public Class MiniStatement
     End Sub
     Private Sub DisplayTr()
         con.Open()
-        Dim cmd As SqlCommand = New SqlCommand("select * from Table_2 where AccountNo='" & Acc & "'", con)
+        Dim cmd As SqlCommand = New SqlCommand("select * from Table_3 where AccountNo='" & Acc & "'", con)
         Dim sda As SqlDataAdapter = New SqlDataAdapter(cmd)
         Dim builder As New SqlCommandBuilder(sda)
         Dim ds As DataSet = New DataSet

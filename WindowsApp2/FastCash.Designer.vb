@@ -38,6 +38,7 @@ Partial Class FastCash
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Palatino Linotype", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(277, 35)
         Me.Label1.Name = "Label1"
@@ -48,6 +49,7 @@ Partial Class FastCash
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(477, 104)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -59,6 +61,7 @@ Partial Class FastCash
         'Label6
         '
         Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(511, 547)
         Me.Label6.Name = "Label6"
@@ -69,6 +72,7 @@ Partial Class FastCash
         'Bal
         '
         Me.Bal.AutoSize = True
+        Me.Bal.BackColor = System.Drawing.Color.Transparent
         Me.Bal.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Bal.Location = New System.Drawing.Point(657, 171)
         Me.Bal.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -80,6 +84,7 @@ Partial Class FastCash
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(412, 171)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -90,7 +95,7 @@ Partial Class FastCash
         '
         'Button6
         '
-        Me.Button6.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button6.BackColor = System.Drawing.Color.Transparent
         Me.Button6.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.Location = New System.Drawing.Point(647, 441)
         Me.Button6.Name = "Button6"
@@ -101,7 +106,7 @@ Partial Class FastCash
         '
         'Button5
         '
-        Me.Button5.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button5.BackColor = System.Drawing.Color.Transparent
         Me.Button5.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.Location = New System.Drawing.Point(647, 348)
         Me.Button5.Name = "Button5"
@@ -112,7 +117,7 @@ Partial Class FastCash
         '
         'Button4
         '
-        Me.Button4.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button4.BackColor = System.Drawing.Color.Transparent
         Me.Button4.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.Location = New System.Drawing.Point(647, 251)
         Me.Button4.Name = "Button4"
@@ -123,7 +128,7 @@ Partial Class FastCash
         '
         'Button3
         '
-        Me.Button3.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button3.BackColor = System.Drawing.Color.Transparent
         Me.Button3.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Location = New System.Drawing.Point(286, 441)
         Me.Button3.Name = "Button3"
@@ -134,7 +139,7 @@ Partial Class FastCash
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button2.BackColor = System.Drawing.Color.Transparent
         Me.Button2.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(286, 348)
         Me.Button2.Name = "Button2"
@@ -145,7 +150,7 @@ Partial Class FastCash
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button1.BackColor = System.Drawing.Color.Transparent
         Me.Button1.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(286, 251)
         Me.Button1.Name = "Button1"
@@ -158,6 +163,8 @@ Partial Class FastCash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.WindowsApp2.My.Resources.Resources.green_sand_paper_53876_86281
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1106, 614)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)

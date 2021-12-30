@@ -40,17 +40,22 @@ Public Class Deposit
         If TextBox1.Text = "" Or Convert.ToInt32(TextBox1.Text) < 1 Then
             MsgBox("Missing Information")
         Else
-
+            Dim TrDate As DateTime = DateTime.Now
+            Dim strDate As String = TrDate.ToString("yyyy-MM-dd HH:mm:ss")
             Dim Account = Convert.ToInt32(Acc)
             Dim TrType = "Deposit"
             Try
                 Dim Bal = 0
                 con.open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_2 Values('" & MyAcc & "','" & TrType & "','" & TextBox1.Text & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_3 Values('" & MyAcc & "','" & TrType & "','" & TextBox1.Text & "','" & strDate & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Deposit Successful")
                 con.Close()
                 UpdateBal()
+                Dim Obj = New Menuform()
+                Obj.Acc = Acc
+                Obj.Show()
+                Me.Hide()
             Catch ex As Exception
                 MsgBox(ex.Message)
             End Try

@@ -22,18 +22,15 @@ Public Class Signupform
         End If
         If (cmd1 = 1) Then
             MsgBox("Successfully stored", MsgBoxStyle.Information, "Success")
-            Me.Show()
+            Dim Obj = New Signupform
+            Obj.ResetText()
+            Obj.Show()
             con.Close()
-            Reset()
         End If
     End Sub
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim Obj = New Login
         Me.Hide()
         Obj.Show()
-    End Sub
-
-    Private Sub Signupform_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
     End Sub
 End Class

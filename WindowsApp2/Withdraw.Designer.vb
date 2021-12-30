@@ -35,6 +35,7 @@ Partial Class Withdraw
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Palatino Linotype", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(65, 28)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -46,6 +47,7 @@ Partial Class Withdraw
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(233, 92)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -57,8 +59,9 @@ Partial Class Withdraw
         'Balance
         '
         Me.Balance.AutoSize = True
+        Me.Balance.BackColor = System.Drawing.Color.Transparent
         Me.Balance.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Balance.Location = New System.Drawing.Point(346, 163)
+        Me.Balance.Location = New System.Drawing.Point(347, 151)
         Me.Balance.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Balance.Name = "Balance"
         Me.Balance.Size = New System.Drawing.Size(59, 38)
@@ -68,8 +71,9 @@ Partial Class Withdraw
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(94, 163)
+        Me.Label3.Location = New System.Drawing.Point(95, 151)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(196, 38)
@@ -79,8 +83,9 @@ Partial Class Withdraw
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(94, 230)
+        Me.Label4.Location = New System.Drawing.Point(95, 218)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(154, 38)
@@ -89,17 +94,19 @@ Partial Class Withdraw
         '
         'AmountW
         '
-        Me.AmountW.Location = New System.Drawing.Point(353, 230)
+        Me.AmountW.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AmountW.Location = New System.Drawing.Point(354, 228)
         Me.AmountW.Multiline = True
         Me.AmountW.Name = "AmountW"
-        Me.AmountW.Size = New System.Drawing.Size(242, 38)
+        Me.AmountW.Size = New System.Drawing.Size(242, 28)
         Me.AmountW.TabIndex = 19
         '
         'Label6
         '
         Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(279, 398)
+        Me.Label6.Location = New System.Drawing.Point(278, 385)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(82, 31)
         Me.Label6.TabIndex = 20
@@ -107,9 +114,9 @@ Partial Class Withdraw
         '
         'Button7
         '
-        Me.Button7.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button7.BackColor = System.Drawing.Color.Transparent
         Me.Button7.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(218, 323)
+        Me.Button7.Location = New System.Drawing.Point(218, 307)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(215, 52)
         Me.Button7.TabIndex = 21
@@ -120,6 +127,7 @@ Partial Class Withdraw
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.WindowsApp2.My.Resources.Resources.green_sand_paper_53876_86281
         Me.ClientSize = New System.Drawing.Size(649, 450)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Label6)

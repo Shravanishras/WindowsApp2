@@ -34,6 +34,7 @@ Partial Class ChangePIN
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Palatino Linotype", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(56, 25)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -44,6 +45,7 @@ Partial Class ChangePIN
         '
         'NewPinTb
         '
+        Me.NewPinTb.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NewPinTb.Location = New System.Drawing.Point(333, 134)
         Me.NewPinTb.Multiline = True
         Me.NewPinTb.Name = "NewPinTb"
@@ -53,6 +55,7 @@ Partial Class ChangePIN
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(74, 134)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -63,6 +66,7 @@ Partial Class ChangePIN
         '
         'ConPinTb
         '
+        Me.ConPinTb.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ConPinTb.Location = New System.Drawing.Point(333, 206)
         Me.ConPinTb.Multiline = True
         Me.ConPinTb.Name = "ConPinTb"
@@ -72,6 +76,7 @@ Partial Class ChangePIN
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(74, 206)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -82,7 +87,7 @@ Partial Class ChangePIN
         '
         'Button7
         '
-        Me.Button7.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button7.BackColor = System.Drawing.Color.Transparent
         Me.Button7.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button7.Location = New System.Drawing.Point(221, 296)
         Me.Button7.Name = "Button7"
@@ -94,6 +99,7 @@ Partial Class ChangePIN
         'Label6
         '
         Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(276, 382)
         Me.Label6.Name = "Label6"
@@ -105,6 +111,7 @@ Partial Class ChangePIN
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.WindowsApp2.My.Resources.Resources.green_sand_paper_53876_86281
         Me.ClientSize = New System.Drawing.Size(649, 450)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Button7)
