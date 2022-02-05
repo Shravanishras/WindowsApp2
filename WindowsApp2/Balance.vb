@@ -12,7 +12,7 @@ Public Class Balance
 
     Private Sub GetBalance()
         con.Open()
-        Dim cmd As SqlCommand = New SqlCommand("select Balance from AccTable where AccountNo=" & Account & "", con)
+        Dim cmd As SqlCommand = New SqlCommand("select Balance from AccountTable where AccountNo=" & Account & "", con)
         Dim sda As SqlDataAdapter = New SqlDataAdapter(cmd)
         Dim dt As DataTable
         dt = New DataTable

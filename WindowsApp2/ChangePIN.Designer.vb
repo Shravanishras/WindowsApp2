@@ -47,8 +47,10 @@ Partial Class ChangePIN
         '
         Me.NewPinTb.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NewPinTb.Location = New System.Drawing.Point(333, 134)
+        Me.NewPinTb.MaxLength = 4
         Me.NewPinTb.Multiline = True
         Me.NewPinTb.Name = "NewPinTb"
+        Me.NewPinTb.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.NewPinTb.Size = New System.Drawing.Size(242, 38)
         Me.NewPinTb.TabIndex = 21
         '
@@ -68,8 +70,10 @@ Partial Class ChangePIN
         '
         Me.ConPinTb.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ConPinTb.Location = New System.Drawing.Point(333, 206)
+        Me.ConPinTb.MaxLength = 4
         Me.ConPinTb.Multiline = True
         Me.ConPinTb.Name = "ConPinTb"
+        Me.ConPinTb.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.ConPinTb.Size = New System.Drawing.Size(242, 38)
         Me.ConPinTb.TabIndex = 23
         '

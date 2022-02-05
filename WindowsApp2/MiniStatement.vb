@@ -10,7 +10,7 @@ Public Class MiniStatement
     End Sub
     Private Sub DisplayTr()
         con.Open()
-        Dim cmd As SqlCommand = New SqlCommand("select * from Table_3 where AccountNo='" & Acc & "'", con)
+        Dim cmd As SqlCommand = New SqlCommand("select * from TrsnTable where AccountNo='" & Acc & "'", con)
         Dim sda As SqlDataAdapter = New SqlDataAdapter(cmd)
         Dim builder As New SqlCommandBuilder(sda)
         Dim ds As DataSet = New DataSet
@@ -20,5 +20,16 @@ Public Class MiniStatement
     End Sub
     Private Sub MiniStatement_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DisplayTr()
+    End Sub
+    Private bitmap As Bitmap
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        PrintPreviewDialog1.Document = PrintDocument1
+        PrintPreviewDialog1.PrintPreviewControl.Zoom = 1
+        PrintPreviewDialog1.ShowDialog()
+    End Sub
+    Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
+        Dim imagebmp As New Bitmap(Me.TransactionDGV.Width, Me.TransactionDGV.Height)
+        TransactionDGV.DrawToBitmap(imagebmp, New Rectangle(0, 0, Me.TransactionDGV.Width, Me.TransactionDGV.Height))
+        e.Graphics.DrawImage(imagebmp, 0, 0)
     End Sub
 End Class

@@ -20,7 +20,7 @@ Public Class ChangePIN
         ElseIf NewPinTb.Text = ConPinTb.Text Then
             Try
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Update AccTable set PIN='" & NewPinTb.Text & "' where AccountNo='" & MyAcc & "'", con)
+                Dim cmd As SqlCommand = New SqlCommand("Update AccountTable set PIN='" & NewPinTb.Text & "' where AccountNo='" & MyAcc & "'", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("PIN Changed Successfully")
                 con.Close()
@@ -32,6 +32,20 @@ Public Class ChangePIN
             End Try
         Else
             MsgBox("New Pin and Confirmed Pin doesn't Match")
+        End If
+    End Sub
+    Private Sub NewPinTb_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles NewPinTb.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
+    Private Sub ConPinTb_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles ConPinTb.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
         End If
     End Sub
 End Class

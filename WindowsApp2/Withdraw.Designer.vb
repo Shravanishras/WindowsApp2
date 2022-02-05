@@ -96,9 +96,10 @@ Partial Class Withdraw
         '
         Me.AmountW.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AmountW.Location = New System.Drawing.Point(354, 228)
+        Me.AmountW.MaxLength = 5
         Me.AmountW.Multiline = True
         Me.AmountW.Name = "AmountW"
-        Me.AmountW.Size = New System.Drawing.Size(242, 28)
+        Me.AmountW.Size = New System.Drawing.Size(242, 37)
         Me.AmountW.TabIndex = 19
         '
         'Label6

@@ -13,7 +13,7 @@ Public Class Deposit
     Dim OldBalance = 0
     Private Sub GetBalance()
         con.Open()
-        Dim cmd As SqlCommand = New SqlCommand("select Balance from AccTable where AccountNo=" & Acc & "", con)
+        Dim cmd As SqlCommand = New SqlCommand("select Balance from AccountTable where AccountNo=" & Acc & "", con)
         Dim sda As SqlDataAdapter = New SqlDataAdapter(cmd)
         Dim ds As New DataSet
         Dim dt As DataTable
@@ -27,7 +27,7 @@ Public Class Deposit
         Dim NewBal = OldBalance + Convert.ToInt32(TextBox1.Text)
         Try
             con.Open()
-            Dim cmd As SqlCommand = New SqlCommand("Update AccTable set Balance=" & NewBal & "where AccountNo=" & MyAcc & "", con)
+            Dim cmd As SqlCommand = New SqlCommand("Update AccountTable set Balance=" & NewBal & "where AccountNo=" & MyAcc & "", con)
             cmd.ExecuteNonQuery()
             MsgBox("Balance Updated")
             con.Close()
@@ -38,7 +38,7 @@ Public Class Deposit
     Public Property Acc As String
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         If TextBox1.Text = "" Or Convert.ToInt32(TextBox1.Text) < 1 Then
-            MsgBox("Missing Information")
+            MsgBox("Please enter Amount")
         Else
             Dim TrDate As DateTime = DateTime.Now
             Dim strDate As String = TrDate.ToString("yyyy-MM-dd HH:mm:ss")
@@ -47,7 +47,7 @@ Public Class Deposit
             Try
                 Dim Bal = 0
                 con.open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_3 Values('" & MyAcc & "','" & TrType & "','" & TextBox1.Text & "','" & strDate & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into TrsnTable Values('" & MyAcc & "','" & TrType & "','" & TextBox1.Text & "','" & strDate & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Deposit Successful")
                 con.Close()
@@ -65,5 +65,12 @@ Public Class Deposit
     Private Sub Deposit_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         MyAcc = Convert.ToInt32(Acc)
         GetBalance()
+    End Sub
+    Private Sub TextBox1_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox1.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
     End Sub
 End Class

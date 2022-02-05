@@ -15,7 +15,7 @@ Public Class FastCash
             Try
                 Dim Bal = 0
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_3 Values('" & MyAcc & "','" & TrType & "','" & Amount & "','" & strDate & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into TrsnTable Values('" & MyAcc & "','" & TrType & "','" & Amount & "','" & strDate & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()
@@ -37,7 +37,7 @@ Public Class FastCash
     End Sub
     Private Sub GetBalance()
         con.Open()
-        Dim cmd As SqlCommand = New SqlCommand("select Balance from AccTable where AccountNo=" & Acc & "", con)
+        Dim cmd As SqlCommand = New SqlCommand("select Balance from AccountTable where AccountNo=" & Acc & "", con)
         Dim sda As SqlDataAdapter = New SqlDataAdapter(cmd)
         Dim dt As DataTable
         dt = New DataTable
@@ -57,7 +57,7 @@ Public Class FastCash
         Dim NewBal = OldBalance - Amt
         Try
             con.Open()
-            Dim cmd As SqlCommand = New SqlCommand("Update AccTable set Balance=" & NewBal & "where AccountNo=" & Acc & "", con)
+            Dim cmd As SqlCommand = New SqlCommand("Update AccountTable set Balance=" & NewBal & "where AccountNo=" & Acc & "", con)
             cmd.ExecuteNonQuery()
             MsgBox("Balance Updated")
             con.Close()
@@ -77,7 +77,7 @@ Public Class FastCash
             Try
                 Dim Bal = 0
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_3 Values('" & MyAcc & "','" & TrType & "','" & Amount & "','" & strDate & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into TrsnTable Values('" & MyAcc & "','" & TrType & "','" & Amount & "','" & strDate & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()
@@ -103,7 +103,7 @@ Public Class FastCash
             Try
                 Dim Bal = 0
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_3 Values('" & MyAcc & "','" & TrType & "','" & Amount & "','" & strDate & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into TrsnTable Values('" & MyAcc & "','" & TrType & "','" & Amount & "','" & strDate & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()
@@ -130,7 +130,7 @@ Public Class FastCash
             Try
                 Dim Bal = 0
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_3 Values('" & MyAcc & "','" & TrType & "','" & Amount & "','" & strDate & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into TrsnTable Values('" & MyAcc & "','" & TrType & "','" & Amount & "','" & strDate & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()
@@ -156,7 +156,7 @@ Public Class FastCash
             Try
                 Dim Bal = 0
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_3 Values('" & MyAcc & "','" & TrType & "','" & Amount & "','" & strDate & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into TrsnTable Values('" & MyAcc & "','" & TrType & "','" & Amount & "','" & strDate & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()
@@ -183,7 +183,7 @@ Public Class FastCash
             Try
                 Dim Bal = 0
                 con.Open()
-                Dim cmd As SqlCommand = New SqlCommand("Insert into Table_3 Values('" & MyAcc & "','" & TrType & "','" & Amount & "','" & strDate & "')", con)
+                Dim cmd As SqlCommand = New SqlCommand("Insert into TrsnTable Values('" & MyAcc & "','" & TrType & "','" & Amount & "','" & strDate & "')", con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Withdraw Successful")
                 con.Close()

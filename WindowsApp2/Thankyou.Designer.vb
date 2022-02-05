@@ -26,6 +26,8 @@ Partial Class Thankyou
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.SuspendLayout()
         '
         'Label1
@@ -50,6 +52,18 @@ Partial Class Thankyou
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "VISIT AGAIN"
         '
+        'Timer2
+        '
+        Me.Timer2.Enabled = True
+        '
+        'ProgressBar1
+        '
+        Me.ProgressBar1.Location = New System.Drawing.Point(404, 579)
+        Me.ProgressBar1.Name = "ProgressBar1"
+        Me.ProgressBar1.Size = New System.Drawing.Size(386, 23)
+        Me.ProgressBar1.TabIndex = 2
+        Me.ProgressBar1.Visible = False
+        '
         'Thankyou
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -57,6 +71,7 @@ Partial Class Thankyou
         Me.BackgroundImage = Global.WindowsApp2.My.Resources.Resources.green_sand_paper_53876_86281
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1194, 614)
+        Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Thankyou"
@@ -69,4 +84,6 @@ Partial Class Thankyou
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents Timer2 As Timer
+    Friend WithEvents ProgressBar1 As ProgressBar
 End Class

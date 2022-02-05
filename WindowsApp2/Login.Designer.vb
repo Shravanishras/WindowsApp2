@@ -61,7 +61,7 @@ Partial Class Login
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Palatino Linotype", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(342, 300)
+        Me.Label4.Location = New System.Drawing.Point(330, 298)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(145, 37)
@@ -110,7 +110,7 @@ Partial Class Login
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(157, 54)
         Me.Button2.TabIndex = 8
-        Me.Button2.Text = "SIGN IN"
+        Me.Button2.Text = "SIGN UP"
         Me.Button2.UseVisualStyleBackColor = False
         '
         'Label1
